@@ -1,5 +1,3 @@
-const buttons = document.querySelectorAll('button');
-const display = document.querySelector('.display');
 
 const prevElement = document.querySelector('.prev');
 const currentElement = document.querySelector('.current');
@@ -114,61 +112,3 @@ deleteEl.addEventListener('click',()=>{
     calc.delete();
     calc.updateDisplay();
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// buttons.forEach((button)=>{
-//     button.addEventListener('click',(e)=>{
-//         if(e.target.innerHTML==='='){
-//             string = eval(string);
-//             display.textContent=string;
-//             string = '';
-//         }else if(e.target.innerHTML==='AC'){
-//             string = '';
-//             display.textContent=string;
-//         }else if(e.target.innerHTML==='DEL'){
-//             string = string.slice(0,-1);
-//             display.textContent=string;
-//         }
-//         else{
-//             string = string + e.target.innerHTML;
-//             display.textContent=string;
-//         }
-//     })
-// })
-
-
-
